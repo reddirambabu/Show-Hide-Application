@@ -1,0 +1,73 @@
+/* Write your CSS here */
+.app-container {
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  min-height: 100vh;
+  padding: 5px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-heading {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.first-name {
+  color: #fc63a7;
+  font-size: 12px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  width: 70%;
+  max-width: 550px;
+  cursor: pointer;
+}
+.first-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.lastName-container {
+  color: #fc63a7;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding: 35px;
+  background-color: #fddddb;
+  text-align: center;
+  width: 100%;
+  max-width: 550px;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .lastName-container {
+    max-width: 1140px;
+  }
+  .name-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+  }
+  .first-name-container {
+    width: 80%;
+    margin: 10px;
+  }
+}
